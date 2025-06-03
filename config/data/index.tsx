@@ -24,7 +24,7 @@ export const dtCouple = [
 export const eventTlg = {
   akad: moment('2025-07-06 08:00'),
   startResepsi: moment('2025-07-06 11:00'),
-  endResepsi: moment('2025-07-06 15:00'),
+  endResepsi: moment('2025-07-06 15:30'),
   location: 'https://maps.app.goo.gl/64d2YvdofwCnBhhm8',
 };
 
@@ -32,7 +32,7 @@ export const eventKdr = {
   startSesi1: moment('2025-07-06 08:00'),
   endSesi1: moment('2025-07-06 10:00'),
   startSesi2: moment('2025-07-06 11:00'),
-  endSesi2: moment('2025-07-06 15:00'),
+  endSesi2: moment('2025-07-06 15:30'),
   location: 'https://maps.app.goo.gl/64d2YvdofwCnBhhm8',
 };
 

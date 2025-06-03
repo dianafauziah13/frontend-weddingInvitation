@@ -14,8 +14,8 @@ import OurStorySection from '../components/our-story-section';
 import FloatingToggleMusic from '../components/floating-toggle-music';
 import FloatingScrollUp from '../components/floating-scrollup';
 // import GallerySection from '../components/gallery-section';
-import ConfirmSection from '../components/confirm-section';
-import GreetingsSection from '../components/greetings-section';
+// import ConfirmSection from '../components/confirm-section';
+// import GreetingsSection from '../components/greetings-section';
 import FooterSection from '../components/footer-section';
 // import ModalProtocol from '../components/modal-protocol';
 import {useAudio} from '../utils/helper';
@@ -151,10 +151,10 @@ const Home = () => {
           />
           <OurStorySection storyData={storyData} isMobile={isMobile} />
           {/* <GallerySection imgGallery={imgGallery} /> */}
-          {guestName !== '' && (
+          {/* {guestName !== '' && (
             <ConfirmSection guestName={guestName} place={placeName} />
           )}
-          <GreetingsSection />
+          <GreetingsSection /> */}
           <FooterSection place={placeName} />
           {/* <FloatingQR
             show={showQR}

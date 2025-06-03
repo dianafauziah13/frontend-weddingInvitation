@@ -88,7 +88,7 @@ const OurStorySection = (props: OurStoryProps) => {
               </Col>
               <Col md={6}>
                 <img
-                  src="/img/Cincin 1.jpg"
+                  src="/img/Cincin-1.jpg"
                   className="d-block img-holder"
                   data-aos="fade-left"
                   data-aos-duration="2000"
@@ -152,7 +152,7 @@ const OurStorySection = (props: OurStoryProps) => {
                   data-aos="fade-up"
                   data-aos-duration="2000">
                   <img
-                    src="/img/Cincin 1.jpg"
+                    src="/img/Cincin-1.jpg"
                     className="d-block img-holder mb-4"
                   />
                   <h4 className="mb-4">

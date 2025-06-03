@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Col, Container, Row} from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 interface FrontCoverProps {
   femaleName: string;
@@ -42,19 +42,28 @@ const FrontCover = (props: FrontCoverProps) => {
                   </p>
                 </>
               )}
-              <div className="d-flex justify-content-center">
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="btn-open-invit"
-                  onClick={props.onClick}>
-                  Open Invitation
-                </Button>
-              </div>
             </div>
           </Col>
         </Row>
       </Container>
+
+      {/* Tombol di tengah bawah */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          zIndex: 9999,
+        }}>
+        <Button
+          variant="light"
+          size="sm"
+          className="btn-open-invit"
+          onClick={props.onClick}>
+          Open Invitation
+        </Button>
+      </div>
     </section>
   );
 };

@@ -92,7 +92,7 @@ const EventSection = (props: EventProps) => {
                   {props.eventTlg.akad.format('dddd, DD MMMM YYYY')}
                 </Card.Text>
                 <Card.Text className="text-small">
-                  {props.eventTlg.akad.format('HH:mm')} WIB - Selesai
+                  {props.eventTlg.akad.format('HH:mm')} WIB - 10.00 WIB
                 </Card.Text>
               </Card.Body>
             </Card>
