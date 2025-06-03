@@ -127,7 +127,7 @@ const OurStorySection = (props: OurStoryProps) => {
                     &#10084; {props.storyData.expressFeelings.title}
                   </h4>
                   <p className="mb-5">
-                    {props.storyData.expressFeelings.desc} &#129315;
+                    {props.storyData.expressFeelings.desc};
                   </p>
                 </div>
               </Col>

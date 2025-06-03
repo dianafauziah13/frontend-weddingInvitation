@@ -41,7 +41,7 @@ const FrontCover = (props: FrontCoverProps) => {
               {props.guestName.length !== 0 && (
                 <>
                   <p className="mb-1 text-center wd-for-txt" style={{ fontSize: '0.9rem' }}>
-                    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+                    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
                     Kepada Yth, <br /> Bapak/Ibu/Saudara/I
                   </p>
                   <p
@@ -64,7 +64,7 @@ const FrontCover = (props: FrontCoverProps) => {
       <div
         style={{
           position: 'fixed',
-          bottom: '75px',
+          bottom: '80px',
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 9999,
