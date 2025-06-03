@@ -64,7 +64,7 @@ const FrontCover = (props: FrontCoverProps) => {
       <div
         style={{
           position: 'fixed',
-          bottom: '60px',
+          bottom: '75px',
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 9999,
