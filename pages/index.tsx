@@ -29,7 +29,9 @@ import {
 
 const Home = () => {
   const router = useRouter();
-  const {place, session, to} = router.query;
+  // const {place, session, to} = router.query;
+  const {place, session, guest} = router.query;
+
 
   const urlAudio = '/music/Love-Begins-Again.mp3';
   const [playing, setPlaying, toggle] = useAudio(urlAudio) as any;
@@ -64,13 +66,12 @@ const Home = () => {
     return () => {};
   }, []);
 
-  React.useEffect(() => {
-    setPlaceName(place !== undefined ? `${place}` : '');
-    setSessionNum(session !== undefined ? `${session}` : '');
-    setGuestName(to !== undefined ? `${to}` : '');
+React.useEffect(() => {
+  setPlaceName(place !== undefined ? `${place}` : '');
+  setSessionNum(session !== undefined ? `${session}` : '');
+  setGuestName(guest !== undefined ? `${guest}` : '');
+}, [place, session, guest]);
 
-    return () => {};
-  }, [place, session, to]);
 
   const isMobileScreen = () => {
     let mqPhone = window.matchMedia(
@@ -112,7 +113,7 @@ const Home = () => {
     <>
       {showCover ? (
         <FrontCover
-          femaleName="Irna Khaleda Nurmeta"
+          femaleName="Irna Khaleda N"
           maleName="Guntur Satria"
           guestName={guestName}
           place={placeName}

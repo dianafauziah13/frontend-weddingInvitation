@@ -27,18 +27,31 @@ const FrontCover = (props: FrontCoverProps) => {
               </p>
               {props.place === 'kdr' ? (
                 <h4 className="mb-1 text-center text-white wd-couplename font-weight-bold">
-                  {props.maleName} & {props.femaleName}
+                  {props.maleName} <br />
+                  & <br />
+                  {props.femaleName}
                 </h4>
               ) : (
                 <h4 className="mb-1 text-center text-white wd-couplename font-weight-bold">
-                  {props.femaleName} & {props.maleName}
+                  {props.femaleName}<br />
+                  & <br />
+                  {props.maleName}
                 </h4>
               )}
               {props.guestName.length !== 0 && (
                 <>
-                  <p className="mb-1 text-center wd-for-txt">Untuk</p>
-                  <p className="mb-3 text-center text-white wd-guestname">
+                  <p className="mb-1 text-center wd-for-txt" style={{ fontSize: '0.9rem' }}>
+                    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+                    Kepada Yth, <br /> Bapak/Ibu/Saudara/I
+                  </p>
+                  <p
+                    className="mb-3 text-center text-white wd-guestname"
+                    style={{ fontStyle: 'italic', fontSize: '0.9rem' }}
+                  >
                     {props.guestName}
+                  </p>
+                  <p className="mb-1 text-center wd-for-txt" style={{ fontSize: '0.9rem' }}>
+                    di Tempat
                   </p>
                 </>
               )}
@@ -51,7 +64,7 @@ const FrontCover = (props: FrontCoverProps) => {
       <div
         style={{
           position: 'fixed',
-          bottom: '30px',
+          bottom: '60px',
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 9999,
