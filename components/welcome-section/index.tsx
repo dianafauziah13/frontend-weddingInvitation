@@ -22,16 +22,16 @@ const WelcomeSection = (props: WelcomeProps) => {
           <Col md={12} className="d-flex justify-content-center">
             <div className="welcome-content">
               <div data-aos="fade-down" data-aos-duration="2000">
-                <h4 className="mb-3 text-center text-white wd-couplename font-weight-bold">
-                  {props.place === 'kdr' ? 'Guntur Satria' : 'Irna Khaleda Nurmeta'} &{' '}
-                  {props.place === 'kdr' ? 'Irna Khaleda Nurmeta' : 'Guntur Satria'}
-                </h4>
+                  <h4 className="mb-3 text-center text-white font-serif text-2xl md:text-3xl font-semibold tracking-wide">
+                    {props.place === 'kdr' ? 'Guntur Satria' : 'Irna Khaleda Nurmeta'} <br /> & <br />
+                    {props.place === 'kdr' ? 'Irna Khaleda Nurmeta' : 'Guntur Satria'}
+                  </h4>
                 <p className="mb-1 text-center text-white welcome-wd-place">
                   The Wedding |{' '}
                   {moment(
                     props.place === 'kdr' ? '2025-07-06' : '2025-07-06',
                   ).format('DD.MM.YYYY')}{' '}
-                  | {props.place === 'kdr' ? 'Cianjur' : 'Cianjur'}
+                  | {props.place === 'kdr' ? 'Bandung Barat' : 'Bandung Barat'}
                 </p>
               </div>
               <div className="link-toscroll" onClick={props.onScrollDownClick}>

@@ -154,9 +154,9 @@ const EventSection = (props: EventProps) => {
         <Row className="justify-content-center">
           <Col md={12}>
             <div data-aos="fade-up" data-aos-duration="1000" className="mb-4">
-              <h3 className="head-title text-center">
+              {/* <h3 className="head-title text-center">
                 السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
-              </h3>
+              </h3> */}
               <h3 className="head-title text-center">
                 Assalamu’alaikum Warahmatullahi Wabarakatuh
               </h3>
